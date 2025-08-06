@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Mi Panel</h1>
+            <button id="logout-btn" class="logout-btn">
+                <span>Cerrar Sesión</span>
+                <i class="logout-icon">→</i>
+            </button>
+        </header>
+
+        <main class="dashboard-content">
+            <div class="welcome-section">
+                <h2>Bienvenido, <span id="user-name"></span>!</h2>
+                <p>Has iniciado sesión correctamente en nuestro sistema.</p>
+            </div>
+
+            <div class="user-info">
+                <div class="info-card">
+                    <h3>Estado de la cuenta</h3>
+                    <p>Activa</p>
+                </div>
+                <div class="info-card">
+                    <h3>Último acceso</h3>
+                    <p id="last-access">Hoy</p>
+                </div>
+            </div>
+
+            <div class="quick-actions">
+                <h3>Acciones rápidas</h3>
+                <div class="actions-grid">
+                    <button class="action-btn">
+                        <i>✏️</i>
+                        <span>Editar perfil</span>
+                    </button>
+                    <button class="action-btn">
+                        <i>🔒</i>
+                        <span>Cambiar contraseña</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>
